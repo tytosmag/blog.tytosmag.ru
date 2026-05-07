@@ -1,0 +1,177 @@
+# The Site Configuration
+
+theme: jekyll-theme-chirpy
+
+# Русская локализация интерфейса Chirpy
+lang: ru-RU
+
+# Важно: у тебя сейчас в конфиге была Москва.
+# Если хочешь оставить Москву — оставь Europe/Moscow.
+# Если хочешь текущую локаль Польши — замени на Europe/Warsaw.
+timezone: Europe/Moscow
+
+# SEO
+title: Tytosmag Blog
+tagline: DevOps, Linux, Docker, CI/CD
+description: >-
+  Личный технический блог Анищенко Сергея про DevOps, Linux, Docker,
+  Docker Compose, GitHub Actions, CI/CD, инфраструктуру, серверы,
+  автоматизацию и разработку.
+
+url: "https://blog.tytosmag.ru"
+baseurl: ""
+
+github:
+  username: tytosmag
+
+twitter:
+  username:
+
+social:
+  name: Анищенко Сергей
+  email: tytosmag@gmail.com
+  links:
+    - https://github.com/tytosmag
+    - https://tytosmag.ru
+
+webmaster_verifications:
+  google:
+  bing:
+  alexa:
+  yandex:
+  baidu:
+  facebook:
+
+analytics:
+  google:
+    id:
+  goatcounter:
+    id:
+  umami:
+    id:
+    domain:
+  matomo:
+    id:
+    domain:
+  cloudflare:
+    id:
+  fathom:
+    id:
+
+pageviews:
+  provider:
+
+# Пустое значение = тема следует системной теме пользователя.
+# Можно поставить dark или light.
+theme_mode: dark
+
+# Пока CDN не используем.
+cdn:
+
+# Аватар в левом sidebar
+avatar: /assets/img/avatar.jpg
+
+# Картинка для Open Graph / SEO preview
+social_preview_image: /assets/img/social-preview.svg
+
+toc: true
+
+actions:
+  edit_post:
+    enabled: false
+    url:
+    static_url: false
+
+comments:
+  provider:
+
+assets:
+  self_host:
+    enabled: false
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+
+paginate: 10
+
+kramdown:
+  footnote_backlink: "↩︎"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      permalink: /posts/:title/
+
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
+  - Dockerfile
+  - docker-compose.yml
+  - scripts
+  - Makefile
+  - CONTENT_PLAN.md
+  - _templates
+  - .env

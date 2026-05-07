@@ -1,0 +1,58 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+:root {
+  --tytosmag-radius: 0.75rem;
+}
+
+/* Sidebar avatar */
+#avatar {
+  border-radius: 28%;
+  box-shadow: 0 12px 35px rgb(0 0 0 / 28%);
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  letter-spacing: -0.02em;
+}
+
+/* Code blocks */
+.highlight,
+div[class^="language-"],
+div[class*=" language-"] {
+  border-radius: var(--tytosmag-radius);
+}
+
+div[class^="language-"] > button,
+div[class*=" language-"] > button {
+  border-radius: 0.5rem;
+}
+
+code.highlighter-rouge {
+  border-radius: 0.35rem;
+  padding: 0.12rem 0.35rem;
+}
+
+/* Prompt blocks */
+.prompt-tip,
+.prompt-info,
+.prompt-warning,
+.prompt-danger {
+  border-radius: var(--tytosmag-radius);
+}
+
+/* Post cards */
+.post-preview {
+  border-radius: var(--tytosmag-radius);
+}

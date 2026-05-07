@@ -1,0 +1,16 @@
+# The contact options.
+
+- type: github
+  icon: "fab fa-github"
+
+- type: email
+  icon: "fas fa-envelope"
+  noblank: true
+
+- type: telegram
+  icon: "fab fa-telegram"
+  url: "https://t.me/tytosmag"
+
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true

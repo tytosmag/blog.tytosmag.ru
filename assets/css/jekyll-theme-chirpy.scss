@@ -56,3 +56,58 @@ code.highlighter-rouge {
 .post-preview {
   border-radius: var(--tytosmag-radius);
 }
+
+/* ================================
+   Home page: posts grid 2 columns
+   ================================ */
+
+@media (min-width: 1200px) {
+  #post-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  #post-list > .card-wrapper {
+    margin-bottom: 0;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  #post-list .post-preview {
+    height: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  #post-list .post-preview > [class*="col-"] {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 auto;
+  }
+
+  #post-list .post-preview img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  #post-list .post-preview .card-body {
+    padding: 1.25rem;
+  }
+
+  #post-list .post-preview .card-title {
+    font-size: 1.15rem;
+    line-height: 1.35;
+  }
+
+  #post-list .post-preview .card-text {
+    font-size: 0.95rem;
+  }
+
+  #post-list nav,
+  #post-list .pagination {
+    grid-column: 1 / -1;
+  }
+}

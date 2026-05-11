@@ -83,7 +83,7 @@ actions:
     static_url: false
 
 comments:
-  provider:
+  provider: giscus
 
 assets:
   self_host:
@@ -119,7 +119,7 @@ defaults:
       type: posts
     values:
       layout: post
-      comments: false
+      comments: true
       toc: true
       permalink: /posts/:title/
 

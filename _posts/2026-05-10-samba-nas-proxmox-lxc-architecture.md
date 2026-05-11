@@ -6,7 +6,7 @@ tags: [proxmox, lxc, samba, nas, smb3, linux, architecture]
 description: "Проектируем Samba NAS в Proxmox LXC: архитектура, классы доступа, SMB3, безопасность шар и роль ZFS на Proxmox host."
 pin: false
 toc: true
-comments: false
+comments: true
 image:
   path: /assets/img/posts/samba-nas-proxmox-lxc/part-01-architecture-security.png
   alt: "Собираем Samba NAS в Proxmox LXC: архитектура и безопасность"

@@ -6,7 +6,7 @@ tags: [samba, smb, bash, linux, proxmox, lxc, nas]
 description: "Настраиваем рабочую Samba-шару Share в Proxmox LXC: SMB3 only, пользователь, права доступа, smb.conf и bash-скрипт установки."
 pin: false
 toc: true
-comments: false
+comments: true
 image:
   path: /assets/img/posts/samba-nas-proxmox-lxc/part-02-share.png
   alt: "Собираем Samba NAS в Proxmox LXC: рабочая шара Share"

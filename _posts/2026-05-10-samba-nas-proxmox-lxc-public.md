@@ -6,7 +6,7 @@ tags: [samba, public-share, smb3, guest, read-only, bash, linux]
 description: "Создаём публичную read-only Samba-шару Public в Proxmox LXC: гостевой доступ, SMB3, безопасные права и bash-скрипт."
 pin: false
 toc: true
-comments: false
+comments: true
 image:
   path: /assets/img/posts/samba-nas-proxmox-lxc/part-05-public-readonly.png
   alt: "Собираем Samba NAS в Proxmox LXC: публичная read-only шара"

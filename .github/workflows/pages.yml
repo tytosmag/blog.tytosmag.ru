@@ -38,8 +38,32 @@ jobs:
           ruby-version: "3.4"
           bundler-cache: true
 
+      - name: Generate Giscus config
+        run: |
+          cat > _config.giscus.yml <<EOF
+          comments:
+            provider: giscus
+
+            giscus:
+              repo: "${GISCUS_REPO}"
+              repo_id: "${GISCUS_REPO_ID}"
+              category: "${GISCUS_CATEGORY}"
+              category_id: "${GISCUS_CATEGORY_ID}"
+              mapping: pathname
+              strict: 0
+              reactions_enabled: 1
+              input_position: bottom
+              lang: ru
+              theme: dark
+          EOF
+        env:
+          GISCUS_REPO: ${{ vars.GISCUS_REPO }}
+          GISCUS_REPO_ID: ${{ vars.GISCUS_REPO_ID }}
+          GISCUS_CATEGORY: ${{ vars.GISCUS_CATEGORY }}
+          GISCUS_CATEGORY_ID: ${{ vars.GISCUS_CATEGORY_ID }}
+
       - name: Build site with Jekyll
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --config _config.yml,_config.giscus.yml
         env:
           JEKYLL_ENV: production
 

@@ -6,7 +6,7 @@ tags: [samba, audit, logging, syslog, full-audit, bash, linux]
 description: "Включаем аудит действий пользователей в Samba Secure: vfs_full_audit, syslog-ng, отдельный лог, logrotate и проверка событий."
 pin: false
 toc: true
-comments: false
+comments: true
 image:
   path: /assets/img/posts/samba-nas-proxmox-lxc/part-04-logging.png
   alt: "Собираем Samba NAS в Proxmox LXC: аудит действий пользователей"

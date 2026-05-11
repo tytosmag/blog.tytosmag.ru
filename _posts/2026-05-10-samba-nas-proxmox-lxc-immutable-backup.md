@@ -6,7 +6,7 @@ tags: [proxmox, zfs, backup, immutable-backup, snapshots, samba, lxc]
 description: "Настраиваем immutable backup для Samba NAS на Proxmox: ZFS snapshots, zfs hold, защита от удаления и health-check скрипт."
 pin: false
 toc: true
-comments: false
+comments: true
 image:
   path: /assets/img/posts/samba-nas-proxmox-lxc/part-06-immutable-backup-zfs.png
   alt: "Собираем Samba NAS в Proxmox LXC: immutable backup на ZFS"

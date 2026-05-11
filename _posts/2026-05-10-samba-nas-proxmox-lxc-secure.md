@@ -6,7 +6,7 @@ tags: [samba, smb3, encryption, secure, bash, linux, proxmox]
 description: "Добавляем защищённую Samba-шару Secure в Proxmox LXC: SMB encryption, права 770, SMB3, проверка подключения и bash-скрипт."
 pin: false
 toc: true
-comments: false
+comments: true
 image:
   path: /assets/img/posts/samba-nas-proxmox-lxc/part-03-secure.png
   alt: "Собираем Samba NAS в Proxmox LXC: защищённая шара Secure"
